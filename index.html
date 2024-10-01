@@ -6,113 +6,54 @@
     <title>Horolezecký klub zaměstnanců brněnského metra</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+            animation: bg-animation 10s infinite linear;
+            color: #ff0066;
         }
+
+        @keyframes bg-animation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
         header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 15px;
+            background-color: #ff0066;
+            color: #00ffff;
             text-align: center;
+            padding: 30px;
+            font-size: 2.5em;
+            border-bottom: 10px solid #ffff00;
+            transform: skewY(-5deg);
         }
+
+        header:hover {
+            transform: skewY(5deg);
+            transition: 0.3s;
+        }
+
         nav {
             display: flex;
-            justify-content: center;
-            background-color: #34495e;
-            padding: 10px 0;
+            justify-content: space-around;
+            background-color: #00ffff;
+            padding: 20px;
+            animation: nav-shake 1.5s infinite;
         }
+
+        @keyframes nav-shake {
+            0%, 100% {transform: rotate(-3deg);}
+            50% {transform: rotate(3deg);}
+        }
+
         nav a {
-            color: white;
-            margin: 0 15px;
+            font-size: 1.5em;
+            color: #ff0066;
             text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .section-header h2 {
-            margin: 0;
-            color: #2c3e50;
-        }
-        .about, .members, .contact {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #2c3e50;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Horolezecký klub zaměstnanců brněnského metra</h1>
-    <p>Přátelé, adrenalin a skály</p>
-</header>
-
-<nav>
-    <a href="#about">O nás</a>
-    <a href="#members">Členové</a>
-    <a href="#contact">Kontakt</a>
-</nav>
-
-<section id="about">
-    <div class="about">
-        <div class="section-header">
-            <h2>O nás</h2>
-        </div>
-        <p>Horolezecký klub zaměstnanců brněnského metra je klub zaměřený na horolezectví, dobrodružství a pohyb v přírodě. Naši členové jsou vášniví horolezci a pracovníci brněnského metra, kteří se rádi věnují lezení na různých místech jak v České republice, tak i v zahraničí.</p>
-        <p>Pořádáme pravidelné výjezdy, tréninky a workshopy pro nové členy. Každý, kdo má zájem o lezení a chce se stát součástí naší komunity, je vítán.</p>
-    </div>
-</section>
-
-<section id="members">
-    <div class="members">
-        <div class="section-header">
-            <h2>Členové</h2>
-        </div>
-        <p>V našem klubu jsou zkušení lezci i začátečníci. Seznam hlavních členů klubu:</p>
-        <ul>
-            <li>Jan Novák - předseda klubu a zkušený horolezec</li>
-            <li>Petra Dvořáková - hlavní organizátorka akcí</li>
-            <li>Tomáš Malý - trenér začátečníků</li>
-            <li>Lucie Horáková - členka, která se specializuje na bouldering</li>
-            <li>Karel Svoboda - zkušený alpinista</li>
-        </ul>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="contact">
-        <div class="section-header">
-            <h2>Kontakt</h2>
-        </div>
-        <p>Máte zájem se k nám přidat nebo se jen chcete na něco zeptat? Kontaktujte nás!</p>
-        <p>Email: <a href="mailto:info@horolezeckymetro.cz">info@horolezeckymetro.cz</a></p>
-        <p>Telefon: +420 123 456 789</p>
-        <p>Adresa: Metro Brno, Nádražní 1, 602 00 Brno</p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 Horolezecký klub zaměstnanců brněnského metra</p>
-</footer>
-
-</body>
-</html>
+            background-color: #ffff00;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0px 
 
